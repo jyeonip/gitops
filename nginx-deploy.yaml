@@ -11,13 +11,12 @@ spec:
     metadata:
       labels:
         run: nginx-deploy
+  syncPolicy:
+    automated: {}
     spec:
       containers:
       - image: yeonip/app:v1
         name: test
         ports:
         - containerPort: 80
-  args:
-    statusProcessors: "20"
-    operationProcessors: "10"
-    appResyncPeriod: "30"
+
