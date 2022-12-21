@@ -1,2 +1,2 @@
-# gitops1
+# gitops
 k8s
