@@ -11,8 +11,6 @@ spec:
     metadata:
       labels:
         run: nginx-deploy
-  syncPolicy:
-    automated: {}
     spec:
       containers:
       - image: yeonip/app:v1
